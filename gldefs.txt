@@ -1,0 +1,17 @@
+HardwareShader PostProcess Screen {
+  Name "CRT_Yee64"
+  Shader "shaders/crt_yee64.fp" 330
+  Uniform int iWidth
+  Uniform int iHeight
+  Uniform float fDownScale
+  Enabled
+}
+
+HardwareShader PostProcess Screen {
+  Name "CRT_YeeTron"
+  Shader "shaders/crt_yeetron.fp" 330
+  Uniform int iWidth
+  Uniform int iHeight
+  Uniform float fDownScale
+  Enabled
+}

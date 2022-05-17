@@ -1,0 +1,10 @@
+[enu default]
+CRTSM_TITLE = "CRT Options";
+CRTSM_INDEX = "CRT Shader";
+CRTSM_INDEX1 = "Off";
+CRTSM_INDEX2 = "Yee64";
+CRTSM_INDEX3 = "Yeetron";
+CRTSM_WIDTH = "Width";
+CRTSM_HEIGHT = "Height";
+CRTSM_RES_REC = "Recommended to not exceed your current resolution";
+CRTSM_DOWNSCALE = "Downscale";

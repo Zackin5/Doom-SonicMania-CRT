@@ -1,0 +1,34 @@
+version "2.5"
+
+class CrtShaderEventHandler : StaticEventHandler
+{
+	override void UiTick()
+	{
+		PlayerInfo p = players[consoleplayer];
+		int mode = Cvar.GetCVar("gl_crt_mode", p).GetInt();
+		
+		if (mode == 1)
+		{
+			Shader.SetUniform1i(p, "CRT_Yee64", "iWidth", gl_crt_width);
+			Shader.SetUniform1i(p, "CRT_Yee64", "iHeight", gl_crt_height);
+			Shader.SetUniform1f(p, "CRT_Yee64", "fDownScale", gl_crt_downscale);
+			Shader.SetEnabled(p, "CRT_Yee64", true);
+		}
+		else
+		{
+			Shader.SetEnabled(p, "CRT_Yee64", false);
+		}
+
+		if (mode == 2)
+		{
+			Shader.SetUniform1i(p, "CRT_YeeTron", "iWidth", gl_crt_width);
+			Shader.SetUniform1i(p, "CRT_YeeTron", "iHeight", gl_crt_height);
+			Shader.SetUniform1f(p, "CRT_YeeTron", "fDownScale", gl_crt_downscale);
+			Shader.SetEnabled(p, "CRT_YeeTron", true);
+		}
+		else
+		{
+			Shader.SetEnabled(p, "CRT_YeeTron", false);
+		}
+	}
+}

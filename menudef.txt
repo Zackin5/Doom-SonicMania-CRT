@@ -1,0 +1,21 @@
+AddOptionMenu "OptionsMenu" 
+{
+	SubMenu "$CRTSM_TITLE", "CRTSMOptionMenu"
+}
+
+OptionValue "CRTSM_INDEX"
+{
+	0, "$CRTSM_INDEX1"
+	1, "$CRTSM_INDEX2"
+	2, "$CRTSM_INDEX3"
+}
+
+OptionMenu "CRTSMOptionMenu"
+{
+	Title "$CRTSM_TITLE"
+	Option "$CRTSM_INDEX", gl_crt_mode, "CRTSM_INDEX"
+	Slider "$CRTSM_WIDTH", gl_crt_width, 0, 4000, 1
+	Slider "$CRTSM_HEIGHT", gl_crt_height, 0, 4000, 1
+	StaticText "$CRTSM_RES_REC"
+	Slider "$CRTSM_DOWNSCALE", gl_crt_downscale, 0.0, 10.0, 0.01
+}

@@ -1,0 +1,4 @@
+nosave int gl_crt_mode = 1;
+nosave int gl_crt_width = 1680;
+nosave int gl_crt_height = 1050;
+nosave float gl_crt_downscale = 1.2;
