@@ -4,7 +4,6 @@ HardwareShader PostProcess Screen {
   Uniform int iWidth
   Uniform int iHeight
   Uniform float fDownScale
-  Enabled
 }
 
 HardwareShader PostProcess Screen {
@@ -13,5 +12,4 @@ HardwareShader PostProcess Screen {
   Uniform int iWidth
   Uniform int iHeight
   Uniform float fDownScale
-  Enabled
 }
