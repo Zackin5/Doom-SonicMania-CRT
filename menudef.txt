@@ -14,8 +14,8 @@ OptionMenu "CRTSMOptionMenu"
 {
 	Title "$CRTSM_TITLE"
 	Option "$CRTSM_INDEX", gl_crt_mode, "CRTSM_INDEX"
-	Slider "$CRTSM_WIDTH", gl_crt_width, 0, 4000, 1
-	Slider "$CRTSM_HEIGHT", gl_crt_height, 0, 4000, 1
+	TextField "$CRTSM_WIDTH", gl_crt_width
+	TextField "$CRTSM_HEIGHT", gl_crt_height
 	StaticText "$CRTSM_RES_REC"
-	Slider "$CRTSM_DOWNSCALE", gl_crt_downscale, 0.0, 10.0, 0.01
+	Slider "$CRTSM_DOWNSCALE", gl_crt_downscale, 0.0, 10.0, 0.01, 2
 }
